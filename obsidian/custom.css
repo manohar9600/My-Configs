@@ -1,0 +1,42 @@
+.theme-light{
+    --color-base-100: black;
+    --font-text-theme: inter;
+}
+
+.HyperMD-header-6, h4.tasks-group-heading{
+    font-size: var(--font-text-size) !important;
+}
+
+.cm-hmd-internal-link::before{
+    content: "[";
+}
+
+.cm-hmd-internal-link::after{
+    content: "]";
+}
+
+span.cm-link::before {
+    content: "🕸️ ";
+}
+
+.cm-hashtag.cm-meta {
+    font-family: inter !important;
+}
+
+.cm-hashtag.cm-meta::before {
+    content: "🏷️";
+}
+
+.cm-hashtag-begin {
+    display: none;
+}
+
+.cm-hashtag.cm-hashtag-end {
+    border-top-right-radius: var(--tag-radius);
+    border-bottom-right-radius: var(--tag-radius);
+    border-radius: var(--tag-radius);
+    border-left: none;
+    border-right: var(--tag-border-width) solid var(--tag-border-color);
+    padding-right: var(--tag-padding-x);
+    padding-left: var(--tag-padding-x);
+}
