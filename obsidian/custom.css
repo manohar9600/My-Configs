@@ -1,42 +1,95 @@
+body {
+    --h2-font: "bespoke serif", sans-serif;
+    --h3-font: "bespoke serif", sans-serif;
+    --h4-font: "bespoke serif", sans-serif;
+    --h5-font: "bespoke serif", sans-serif;
+    --inline-title-font: "bespoke serif", sans-serif;
+    --h4-weight: 500;
+    --h5-weight: 500;
+    --h3-size: 1.25em;
+    --h4-size: 1.1em;
+    --h3-weight: 500;
+}
+
 .theme-light{
-    --color-base-100: black;
-    --font-text-theme: inter;
+    --task-divider: #f0f0f0;
 }
 
-.HyperMD-header-6, h4.tasks-group-heading{
-    font-size: var(--font-text-size) !important;
+.theme-dark{
+    --task-divider: hsla(0,0%,100%,0.1);
 }
 
-.cm-hmd-internal-link::before{
-    content: "[";
+h3,
+.markdown-rendered h3,
+.HyperMD-header-3,
+.HyperMD-list-line .cm-header-3,
+h4,
+.markdown-rendered h4,
+.HyperMD-header-3,
+.HyperMD-list-line .cm-header-4 {
+    color: var(--h4-color) !important;
 }
 
-.cm-hmd-internal-link::after{
-    content: "]";
+body .serif{
+    --font-text: "bespoke serif" !important;
+    --font-text-size: 17px;
 }
 
-span.cm-link::before {
-    content: "🕸️ ";
+.dashboard {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 20px !important;
 }
 
-.cm-hashtag.cm-meta {
-    font-family: inter !important;
+.dashboard .markdown-preview-section {
+    max-width: 100%;
 }
 
-.cm-hashtag.cm-meta::before {
-    content: "🏷️";
+/* Title at top of the document */
+.dashboard .markdown-preview-section .title {
+    top: 60px;
+    position: absolute;
+    font-size: 26pt !important;
+    font-weight: bolder;
+    letter-spacing: 8px;
 }
 
-.cm-hashtag-begin {
-    display: none;
+.dashboard h1, .dashboard h2, .dashboard h3 {
+    border-bottom-style: dotted !important;
+    border-width: 1px !important;
+    padding-bottom: 3px !important;
 }
 
-.cm-hashtag.cm-hashtag-end {
-    border-top-right-radius: var(--tag-radius);
-    border-bottom-right-radius: var(--tag-radius);
-    border-radius: var(--tag-radius);
-    border-left: none;
-    border-right: var(--tag-border-width) solid var(--tag-border-color);
-    padding-right: var(--tag-padding-x);
-    padding-left: var(--tag-padding-x);
+
+.dashboard div > ul {
+    list-style: none;
+    display: flex;
+    column-gap: 50px;
+    flex-flow: row wrap;
 }
+
+.dashboard div > ul > li {
+    min-width: 250px;
+    width: 15%;
+}
+
+
+.dashboard .markdown-preview-section {
+    width: 100% !important;
+    max-width: 100% !important;
+ }
+
+
+/* TODOs styling */
+input[type=checkbox]{
+    height: 16px !important;
+    width: 16px;
+    border: 1px solid #c0c0c0 !important;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.HyperMD-task-line{
+    border-bottom: 1px solid var(--task-divider);
+}
+
