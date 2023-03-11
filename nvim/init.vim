@@ -13,3 +13,4 @@ lua require('Comment').setup()
 
 " key mappigs
 nnoremap <C-e> :NERDTreeToggle<CR>
+nnoremap <C-,> :NERDTreeToggle<CR>
