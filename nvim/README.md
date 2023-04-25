@@ -13,3 +13,5 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
+:PackerSync to update plugins in neovim
+
