@@ -109,24 +109,27 @@ margin-left: 3px !important;
 /* S E T T I N G S */
 
 /* colors */
-#navigator-toolbox,
-.titlebar-color {
-    background: color-mix(in srgb, field 77%, AccentColor) !important;
-    transition: all 0.4s ease-out;
-}
- 
-#navigator-toolbox:-moz-window-inactive,
-.titlebar-color {
-    background: unset !important;
-    transition: all 0.4s ease-out;
+@media (prefers-color-scheme: light){
+  #navigator-toolbox,
+  .titlebar-color {
+      background: color-mix(in srgb, field 77%, AccentColor) !important;
+      transition: all 0.4s ease-out;
+  }
+  
+  #navigator-toolbox:-moz-window-inactive,
+  .titlebar-color {
+      background: unset !important;
+      transition: all 0.4s ease-out;
+  }
+
+  #PersonalToolbar{
+    --toolbarbutton-hover-background: color-mix(in srgb, field 56%, AccentColor);
+    --toolbarbutton-active-background: color-mix(in srgb, field 56%, AccentColor);
+    --arrowpanel-background: color-mix(in srgb, field 56%, AccentColor);
+    --panel-item-hover-bgcolor: color-mix(in srgb, field 56%, AccentColor);
+  }
 }
 
-#PersonalToolbar{
-  --toolbarbutton-hover-background: color-mix(in srgb, field 56%, AccentColor);
-  --toolbarbutton-active-background: color-mix(in srgb, field 56%, AccentColor);
-  --arrowpanel-background: color-mix(in srgb, field 56%, AccentColor);
-  --panel-item-hover-bgcolor: color-mix(in srgb, field 56%, AccentColor);
-}
 
 #PersonalToolbar:-moz-window-inactive{
   --toolbarbutton-hover-background: unset !important;
