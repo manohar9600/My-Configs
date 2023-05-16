@@ -16,7 +16,7 @@
 #tracking-protection-icon-container { display: none !important }
 
 /* hide "Site information" button */
-#identity-box { display: none !important }
+/* #identity-box { display: none !important } */
 
 /* hide "tab list" */
 #alltabs-button { display: none !important; }
@@ -507,4 +507,9 @@ background-color: color-mix(in srgb, field 68%, AccentColor) !important;
 
 #nav-bar:is([downloadsbuttonshown], [unifiedextensionsbuttonshown]) #urlbar-container {
   width: calc(220px + 24px + 2 * var(--toolbarbutton-inner-padding)) !important;
+}
+
+
+#urlbar-search-button{
+  margin-left: 5px !important;
 }

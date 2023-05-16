@@ -24,3 +24,8 @@
     filter: invert(100%);
   }
 }
+
+
+.activity-stream *, .activity-stream .top-site-outer .title{
+  font-family: "inter" !important;
+}
