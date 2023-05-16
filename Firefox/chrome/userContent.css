@@ -1,0 +1,26 @@
+@-moz-document url-prefix("about:reader") {
+  body.serif {
+    font-family: "blanco" !important;
+  }
+  @media (prefers-color-scheme: dark){
+    body{
+      background-color: #101314 !important;
+      color: #eee !important;
+    }
+  }
+}
+
+
+
+/* Dark Mode */
+/*
+:root:-moz-lwtheme-darktext {
+}*/
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark){
+  #viewerContainer > #viewer > .page > .canvasWrapper > canvas {
+    filter: grayscale(100%);
+    filter: invert(100%);
+  }
+}
