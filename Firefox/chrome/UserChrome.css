@@ -115,12 +115,6 @@ margin-left: 3px !important;
       background: color-mix(in srgb, field 77%, AccentColor) !important;
       transition: all 0.4s ease-out;
   }
-  
-  #navigator-toolbox:-moz-window-inactive,
-  .titlebar-color {
-      background: unset !important;
-      transition: all 0.4s ease-out;
-  }
 
   #PersonalToolbar{
     --toolbarbutton-hover-background: color-mix(in srgb, field 56%, AccentColor);
@@ -130,6 +124,11 @@ margin-left: 3px !important;
   }
 }
 
+#navigator-toolbox:-moz-window-inactive,
+.titlebar-color {
+    background: unset !important;
+    transition: all 0.4s ease-out;
+}
 
 #PersonalToolbar:-moz-window-inactive{
   --toolbarbutton-hover-background: unset !important;
@@ -325,24 +324,34 @@ tab[visuallyselected] .tab-background::before,
 /*============================================================================*/
 /* ----- T A B   D E S I G N S ----- */
 
+@media (prefers-color-scheme: light){
+  .tabbrowser-tab .tab-background[selected="true"] {
+    background: color-mix(in srgb, field 90%, AccentColor) !important;
+  }
+
+  .tabbrowser-tab .tab-background:not([selected]) {
+    background: color-mix(in srgb, field 65%, AccentColor) !important;
+  }
+}
+
 /* Selected tabs design */
 .tabbrowser-tab .tab-background[selected="true"] {
   border: 0 !important;
   border-radius: 6px 6px 6px 6px !important;
-  background: color-mix(in srgb, field 90%, AccentColor) !important;
-  }
-
-.tabbrowser-tab .tab-background[selected="true"]:-moz-window-inactive {
-  border: 0 !important;
-  border-radius: 6px 6px 6px 6px !important;
-    background: rgb(160,160,160,0.1) !important;
+  /* background: color-mix(in srgb, field 90%, AccentColor) !important; */
 }
 
 /* Background tabs design */
 .tabbrowser-tab .tab-background:not([selected]) {
   border: 0 !important;
   border-radius: 6px 6px 6px 6px !important;
-    background: color-mix(in srgb, field 65%, AccentColor) !important;
+    /* background: color-mix(in srgb, field 65%, AccentColor) !important; */
+}
+
+.tabbrowser-tab .tab-background[selected="true"]:-moz-window-inactive {
+  border: 0 !important;
+  border-radius: 6px 6px 6px 6px !important;
+    background: rgb(160,160,160,0.1) !important;
 }
 
 .tabbrowser-tab .tab-background:not([selected]):-moz-window-inactive {
