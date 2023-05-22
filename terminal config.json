@@ -30,34 +30,39 @@
         }
     ],
     "copyFormatting": "none",
-    "copyOnSelect": false,
+    "copyOnSelect": true,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": {},
         "list": 
         [
             {
-                "antialiasingMode": "cleartype",
-                "colorScheme": "xcad",
+                "colorScheme": 
+                {
+                    "dark": "Aura Dark",
+                    "light": "Github Light"
+                },
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "font": 
                 {
                     "face": "MonoLisa Nerd Font",
-                    "size": 11
+                    "size": 11.0
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "intenseTextStyle": "bright",
                 "name": "Windows PowerShell",
-                "opacity": 89,
+                "opacity": 90,
                 "useAcrylic": true
             },
             {
-                "colorScheme": "One Half Dark",
-                "font": 
-                {
-                    "face": "SF Mono"
-                },
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -67,40 +72,33 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "colorScheme": "xcad",
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
             }
         ]
     },
     "schemes": 
     [
         {
-            "background": "#161D38",
-            "black": "#000000",
-            "blue": "#589DF6",
-            "brightBlack": "#555555",
-            "brightBlue": "#589DF6",
-            "brightCyan": "#3979BC",
-            "brightGreen": "#35BB9A",
-            "brightPurple": "#E75699",
-            "brightRed": "#FA8C8F",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFFF55",
-            "cursorColor": "#BBBBBB",
-            "cyan": "#1F9EE7",
-            "foreground": "#FFFFFF",
-            "green": "#21B089",
-            "name": "Bubbles",
-            "purple": "#944D95",
-            "red": "#F9555F",
-            "selectionBackground": "#B5D5FF",
-            "white": "#BBBBBB",
-            "yellow": "#FEF02A"
+            "background": "#15141B",
+            "black": "#110F18",
+            "blue": "#61FFCA",
+            "brightBlack": "#4D4D4D",
+            "brightBlue": "#A277FF",
+            "brightCyan": "#61FFCA",
+            "brightGreen": "#A277FF",
+            "brightPurple": "#A277FF",
+            "brightRed": "#FFCA85",
+            "brightWhite": "#EDECEE",
+            "brightYellow": "#FFCA85",
+            "cursorColor": "#A277FF",
+            "cyan": "#EDECEE",
+            "foreground": "#EDECEE",
+            "green": "#61FFCA",
+            "name": "Aura Dark",
+            "purple": "#A277FF",
+            "red": "#FF6767",
+            "selectionBackground": "#A394F0",
+            "white": "#EDECEE",
+            "yellow": "#FFCA85"
         },
         {
             "background": "#0C0C0C",
@@ -149,6 +147,29 @@
             "yellow": "#C19C00"
         },
         {
+            "background": "#F4F4F4",
+            "black": "#3E3E3E",
+            "blue": "#003E8A",
+            "brightBlack": "#666666",
+            "brightBlue": "#2E6CBA",
+            "brightCyan": "#0F8688",
+            "brightGreen": "#87D5A2",
+            "brightPurple": "#FFA29F",
+            "brightRed": "#DE0000",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#857401",
+            "cursorColor": "#3F3F3F",
+            "cyan": "#89D1EC",
+            "foreground": "#3E3E3E",
+            "green": "#07962A",
+            "name": "Github Light",
+            "purple": "#E94691",
+            "red": "#970B16",
+            "selectionBackground": "#A9C1E2",
+            "white": "#000000",
+            "yellow": "#F8EEC7"
+        },
+        {
             "background": "#282C34",
             "black": "#282C34",
             "blue": "#61AFEF",
@@ -193,52 +214,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#FAFAFA",
             "yellow": "#C18301"
-        },
-        {
-            "background": "#222222",
-            "black": "#222222",
-            "blue": "#264B49",
-            "brightBlack": "#FFFFFF",
-            "brightBlue": "#7AB0D2",
-            "brightCyan": "#8CDFE0",
-            "brightGreen": "#BEFFA8",
-            "brightPurple": "#C5A7D9",
-            "brightRed": "#FFCDD9",
-            "brightWhite": "#E0E0E0",
-            "brightYellow": "#D0CCCA",
-            "cursorColor": "#87D3C4",
-            "cyan": "#15AB9C",
-            "foreground": "#35B1D2",
-            "green": "#81D778",
-            "name": "Slate",
-            "purple": "#A481D3",
-            "red": "#E2A8BF",
-            "selectionBackground": "#0F3754",
-            "white": "#02C5E0",
-            "yellow": "#C4C9C0"
-        },
-        {
-            "background": "#1E1F29",
-            "black": "#000000",
-            "blue": "#49BAFF",
-            "brightBlack": "#555555",
-            "brightBlue": "#49BAFF",
-            "brightCyan": "#8BE9FE",
-            "brightGreen": "#50FB7C",
-            "brightPurple": "#FC4CB4",
-            "brightRed": "#FC4346",
-            "brightWhite": "#EDEDEC",
-            "brightYellow": "#F0FB8C",
-            "cursorColor": "#E4E4E4",
-            "cyan": "#8BE9FE",
-            "foreground": "#EBECE6",
-            "green": "#50FB7C",
-            "name": "Snazzy",
-            "purple": "#FC4CB4",
-            "red": "#FC4346",
-            "selectionBackground": "#81AEC6",
-            "white": "#EDEDEC",
-            "yellow": "#F0FB8C"
         },
         {
             "background": "#002B36",
@@ -333,29 +308,6 @@
             "yellow": "#C4A000"
         },
         {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        },
-        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -377,30 +329,8 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
-        },
-        {
-            "background": "#1A1A1A",
-            "black": "#121212",
-            "blue": "#2B4FFF",
-            "brightBlack": "#666666",
-            "brightBlue": "#5C78FF",
-            "brightCyan": "#5AC8FF",
-            "brightGreen": "#905AFF",
-            "brightPurple": "#5EA2FF",
-            "brightRed": "#BA5AFF",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#685AFF",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#28B9FF",
-            "foreground": "#F1F1F1",
-            "green": "#7129FF",
-            "name": "xcad",
-            "purple": "#2883FF",
-            "red": "#A52AFF",
-            "selectionBackground": "#FFFFFF",
-            "white": "#FFFFFF",
-            "yellow": "#3D2AFF"
         }
     ],
-    "theme": "system"
+    "theme": "system",
+    "themes": []
 }
