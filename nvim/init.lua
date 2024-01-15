@@ -1,7 +1,2 @@
-require('plugins')
-require('nvim-tree-config')
-require('toggleterm-config')
-
-vim.wo.number = true
-vim.o.clipboard = "unnamedplus"
-
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
